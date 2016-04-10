@@ -8,7 +8,7 @@ public class Person {
 	//constructors
 	public Person() {
 		name = "unknown name";
-		maximumBooks = 1;
+		maximumBooks = 3;
 	}
 	
 	//methods
@@ -28,4 +28,8 @@ public class Person {
 		this.maximumBooks = maximumBooks;
 	}
 	
+	public String toString() {
+		return this.getName()+" (" + this.getMaximumBooks() + " books)";
+		
+	}
 }
