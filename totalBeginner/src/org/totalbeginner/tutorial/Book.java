@@ -3,6 +3,7 @@ package org.totalbeginner.tutorial;
 public class Book {
 	public String title;
 	public String author;
+	private Person person;
 
 	
 	
@@ -32,6 +33,15 @@ public class Book {
 		this.title = string;
 		this.author = "unknown author";
 
+	}
+
+	public void setPerson(Person p2) {
+		this.person = p2;
+		
+	}
+
+	public Person getPerson() {
+		return this.person;
 	}
 
 
